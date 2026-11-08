@@ -17,7 +17,7 @@ a{color:var(--colonial)}
 
 .topo{position:absolute;inset:0 0 auto;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(18px,4vw,56px);color:#fff}
 .marca{font-family:"Young Serif",serif;font-size:24px;color:#fff;text-decoration:none;display:grid;line-height:1.1}
-.marca small{font-family:"Karla",sans-serif;font-size:13px;opacity:.85}
+.marca small{font-family:"Karla",sans-serif;font-size:14px;opacity:.85}
 .topo nav{display:flex;gap:26px}.topo nav a{color:#fff;text-decoration:none;font-size:15px}
 
 .abertura{position:relative;min-height:min(100svh,940px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
@@ -26,7 +26,7 @@ a{color:var(--colonial)}
 .abertura-texto{position:relative;z-index:2;padding:0 clamp(18px,4vw,56px) 36px}
 .abertura h1{color:#fff;font-size:clamp(40px,5.6vw,80px);max-width:16ch}
 .reserva{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:0;margin:0 clamp(18px,4vw,56px) 40px;background:#fff;border-radius:4px;box-shadow:0 18px 50px rgb(0 0 0/.25);overflow:hidden}
-.reserva label{display:grid;gap:2px;padding:14px 20px;font-size:12px;color:#5a6876;border-right:1px solid #e3e6ea}
+.reserva label{display:grid;gap:2px;padding:14px 20px;font-size:14px;color:#5a6876;border-right:1px solid #e3e6ea}
 .reserva input,.reserva select{border:0;padding:4px 0;font-size:17px;color:var(--tinta);background:transparent}
 .reserva button{background:var(--colonial);color:#fff;border:0;padding:0 34px;font-size:16px;font-weight:700;cursor:pointer}
 .reserva button:hover{background:var(--colonial-escuro)}
@@ -76,3 +76,5 @@ a{color:var(--colonial)}
   .lugar,.cafe,.chegar,.suites{grid-template-columns:1fr}
   .cafe>div{padding:0 clamp(18px,4vw,56px)}
 }
+/* revisão de usabilidade no celular */
+@media (max-width:760px){main :is(button,select,input:not([type=checkbox]):not([type=radio]),.botao){min-height:44px}main label:has(>input[type=radio]),main label:has(>input[type=checkbox]){min-height:40px;display:flex;align-items:center;gap:8px}.suite-texto>a{display:inline-block;padding:10px 0}}
